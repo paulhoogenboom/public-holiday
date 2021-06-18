@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>company</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-13 16:20:16</sys_created_on>
+        <sys_id>d9e0adfa07322010c37bf1d08c1ed0d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>company</sys_name>
+        <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
+        <sys_update_name>sys_ui_policy_action_d9e0adfa07322010c37bf1d08c1ed0d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-13 16:55:24</sys_updated_on>
+        <table>x_86134_holidays_public_holidays</table>
+        <ui_policy display_value="Company visible and mandatory when not global">3cc02dfa07322010c37bf1d08c1ed0d4</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

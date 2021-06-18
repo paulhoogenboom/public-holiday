@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-14 10:37:29</sys_created_on>
+        <sys_id>1ffb114f077e2010c37bf1d08c1ed0be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_86134_holidays_holiday_instance.x_86134_holidays.holiday.admin</sys_name>
+        <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
+        <sys_security_acl display_value="x_86134_holidays_holiday_instance">721aae2707312010c37bf1d08c1ed0dd</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1ffb114f077e2010c37bf1d08c1ed0be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-14 10:37:29</sys_updated_on>
+        <sys_user_role display_value="x_86134_holidays.holiday.admin" name="x_86134_holidays.holiday.admin">1af9af031b30101074c531d7dc4bcb8a</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

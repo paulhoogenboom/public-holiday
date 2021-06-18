@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_86134_holidays_holiday_instance</collection>
+        <email_layout/>
+        <message/>
+        <message_html/>
+        <message_list/>
+        <message_text><![CDATA[BEGIN:VCALENDAR
+PRODID:-//Service-now.com//Outlook 11.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+BEGIN:VEVENT
+ATTENDEE;ROLE=REQ-PARTICIPANT;RSVP=TRUE:MAILTO:${to}
+ORGANIZER:MAILTO:${from}
+DTSTART:${dtstart}
+DTEND:${dtend}
+LOCATION:${location}
+TRANSP:OPAQUE
+SEQUENCE:${sys_mod_count}
+UID:${number}
+DTSTAMP:${dtstamp}
+DESCRIPTION:${description}
+SUMMARY:${summary}
+PRIORITY:3
+X-MICROSOFT-CDO-IMPORTANCE:${priority}
+X-MICROSOFT-CDO-BUSYSTATUS:OOF
+STATUS:CONFIRMED
+CLASS:PUBLIC
+END:VEVENT
+END:VCALENDAR]]></message_text>
+        <name>Holiday.calendar.item</name>
+        <sms_alternate/>
+        <subject>SPECIAL CASE TEMPLATE -- Push changes into an outlook calendar</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-05 15:05:29</sys_created_on>
+        <sys_id>bb0ca3c607532010c37bf1d08c1ed073</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Holiday.calendar.item</sys_name>
+        <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
+        <sys_update_name>sysevent_email_template_bb0ca3c607532010c37bf1d08c1ed073</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-11 11:59:39</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

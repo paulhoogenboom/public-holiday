@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_86134_holidays.HolidayUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>HolidayUtils</name>
+        <script><![CDATA[var HolidayUtils = Class.create();
+HolidayUtils.prototype = {
+    initialize: function() {},
+
+
+    PARENTCOMPANY: gs.getProperty('x_86134_holidays.pl4.parent.company'),
+
+    thisYear: function() {
+        var gdt = new GlideDateTime();
+        var year = gdt.getYearLocalTime().toString();
+        return year;
+    },
+
+    createAllHolidayInstances: function(holiday, companyArr, global, date) {
+        if (global) {
+            this.createHolidaysForAllPL4Users(holiday, date);
+        } else {
+            this.createHolidaysForAllCompanies(holiday, companyArr, date);
+        }
+    },
+
+    createHolidaysForAllPL4Users: function(holiday, date) {
+        var user = new GlideRecord('sys_user');
+        user.addEncodedQuery('active=true^company.parent=' + this.PARENTCOMPANY);
+        user.query();
+        while (user.next()) {
+            if (!this.alreadyExists(holiday, user.sys_id)) {
+                this.createOneHolidayInstance(user.sys_id, holiday, date);
+            }
+        }
+    },
+
+    createHolidaysForAllCompanies: function(holiday, companyArr, date) {
+        for (var i = 0; i < companyArr.length; i++) {
+            this.createHolidaysForThisCompany(holiday, companyArr[i], date);
+        }
+    },
+
+    createHolidaysForThisCompany: function(holiday, company, date) {
+        var user = new GlideRecord('sys_user');
+        user.addActiveQuery();
+        user.addQuery('company', company);
+        user.query();
+        while (user.next()) {
+            if (!this.alreadyExists(holiday, user.sys_id)) {
+                this.createOneHolidayInstance(user.sys_id, holiday, date);
+            }
+        }
+    },
+
+    createOneHolidayInstance: function(userID, holidayID, date) {
+        var gd = new GlideDateTime(date);
+        var instance = new GlideRecord('x_86134_holidays_holiday_instance');
+        instance.initialize();
+        instance.user = userID;
+        instance.holiday = holidayID;
+        instance.date = date;
+        var startString = date.toString() + " 00:00:00";
+        var endString = date.toString() + " 21:59:59";
+        instance.holiday_start = new GlideDateTime(startString);
+        instance.holiday_end = new GlideDateTime(endString);
+        instance.year = this.thisYear();
+        var instanceID = instance.insert();
+        if (gd.getDayOfWeekLocalTime() < 6) { //skip weekend days
+            this.createTimeCard(instanceID);
+        }
+    },
+
+    createTimeCard: function(instanceID) {
+        var holidayInstance = new GlideRecord('x_86134_holidays_holiday_instance');
+        if (holidayInstance.get(instanceID)) {
+            var tc = new GlideRecord('time_card');
+            tc.initialize();
+            tc.category = "public_holiday";
+            tc.user = holidayInstance.user;
+            tc.week_starts_on = this.getFirstDayOfWeek(holidayInstance.date);
+            tc.setValue(this.getDayName(holidayInstance.date), 8);
+            tc.insert();
+        }
+    },
+
+    getFirstDayOfWeek: function(date) {
+        var gdt = new GlideDateTime();
+        gdt.setValue(date);
+        gdt.addDaysLocalTime(-1 * gdt.getDayOfWeekUTC() + 1);
+        return gdt;
+    },
+
+    getDayName: function(date) {
+        var dayNames = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+        var gd = new GlideDate();
+        gd.setValue(date);
+        var dayNumber = gd.getDayOfWeekLocalTime();
+        return dayNames[dayNumber];
+    },
+
+    alreadyExists: function(holiday, userID) {
+        var holidayInstance = new GlideRecord('x_86134_holidays_holiday_instance');
+        holidayInstance.addQuery('holiday', holiday);
+        holidayInstance.addQuery('user', userID);
+        holidayInstance.addQuery('year', this.thisYear());
+        holidayInstance.query();
+        if (holidayInstance.hasNext()) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+	
+	setCurrentYear: function() {
+		var pubHol = new GlideRecord('x_86134_holidays_public_holidays');
+		pubHol.addQuery('recurring', true);
+		pubHol.query();
+		while (pubHol.next()) {
+			var date = new GlideDateTime(pubHol.date);
+			if (date.getYearLocalTime() != this.thisYear) {
+				date.addYearsLocalTime(1);
+				pubHol.date = date;
+				pubHol.update();
+			}
+		}
+	},
+
+    type: 'HolidayUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-13 16:43:26</sys_created_on>
+        <sys_id>4e42a17e07322010c37bf1d08c1ed006</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>HolidayUtils</sys_name>
+        <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
+        <sys_update_name>sys_script_include_4e42a17e07322010c37bf1d08c1ed006</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-16 12:02:26</sys_updated_on>
+    </sys_script_include>
+</record_update>

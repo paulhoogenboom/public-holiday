@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_86134_holidays.public_holidays_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>public_holidays_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-20 14:46:59</sys_created_on>
+        <sys_id>de6b23c71b30101074c531d7dc4bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_86134_holidays.public_holidays_user</sys_name>
+        <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
+        <sys_update_name>sys_user_role_de6b23c71b30101074c531d7dc4bcb57</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-20 14:46:59</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</application>
+        <file_path/>
+        <instance_id>47dbeba9dbdccf8052e3f70fbf9619a3</instance_id>
+        <instance_name>dev42416</instance_name>
+        <name>sys_user_role_de6b23c71b30101074c531d7dc4bcb57</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><encryption_context/><grantable>true</grantable><includes_roles/><name>x_86134_holidays.public_holidays_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>public_holidays_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-20 14:46:59</sys_created_on><sys_id>de6b23c71b30101074c531d7dc4bcb57</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_86134_holidays.public_holidays_user</sys_name><sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package><sys_policy/><sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope><sys_update_name>sys_user_role_de6b23c71b30101074c531d7dc4bcb57</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-20 14:46:59</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-748787891</payload_hash>
+        <record_name>x_86134_holidays.public_holidays_user</record_name>
+        <reverted_from/>
+        <source>bcc96f471b30101074c531d7dc4bcbb3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-20 14:47:00</sys_created_on>
+        <sys_id>526b23c71b30101074c531d7dc4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172328d4afa0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-20 14:47:00</sys_updated_on>
+        <type>Role</type>
+        <update_guid>9a6b23c7eb30101076d98a47d62a515b</update_guid>
+        <update_guid_history>9a6b23c7eb30101076d98a47d62a515b:-748787891</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 2020-05-20 16:48:48">2cdb2b4b1b30101074c531d7dc4bcbbd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-20 14:48:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>0ce576aa81e040a480b1cf34b079bc64</sys_id>
+        <sys_metadata>de6b23c71b30101074c531d7dc4bcb57</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_86134_holidays.public_holidays_user</sys_name>
+        <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
+        <sys_scope_delete display_value="">0010f2cd8b7d4800aae4c2a22df92810</sys_scope_delete>
+        <sys_update_name>sys_user_role_de6b23c71b30101074c531d7dc4bcb57</sys_update_name>
+        <sys_update_version display_value="sys_user_role_de6b23c71b30101074c531d7dc4bcb57">526b23c71b30101074c531d7dc4bcb5c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-20 14:48:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Public holidays" max_length="40" name="x_86134_holidays_public_holidays" sizeclass="31" type="collection">
+        <element label="Company" max_length="32" name="company" reference="core_company" reference_qual="nameSTARTSWITHPlat4mation^EQ" reference_qual_condition="nameSTARTSWITHPlat4mation^EQ" type="glide_list"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Global" max_length="40" name="global" type="boolean"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Recurring" max_length="40" name="recurring" type="boolean"/>
+        <index name="index">
+            <element name="company"/>
+        </index>
+    </element>
+</database>

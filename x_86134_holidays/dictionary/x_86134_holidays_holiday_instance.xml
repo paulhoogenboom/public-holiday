@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Holiday instance" max_length="40" name="x_86134_holidays_holiday_instance" sizeclass="31" type="collection">
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Holiday" max_length="32" name="holiday" reference="x_86134_holidays_public_holidays" type="reference"/>
+        <element label="Holiday end" max_length="40" name="holiday_end" type="glide_date_time"/>
+        <element label="Holiday start" max_length="40" name="holiday_start" type="glide_date_time"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Year" max_length="40" name="year" type="string"/>
+        <index name="index">
+            <element name="holiday"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

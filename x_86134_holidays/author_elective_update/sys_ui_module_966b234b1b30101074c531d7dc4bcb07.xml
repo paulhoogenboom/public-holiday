@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <filter/>
+        <name>Public holidays</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles/>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-20 14:47:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>966b234b1b30101074c531d7dc4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public holidays</sys_name>
+        <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
+        <sys_update_name>sys_ui_module_966b234b1b30101074c531d7dc4bcb07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-20 14:47:00</sys_updated_on>
+        <table>x_86134_holidays_public_holidays</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</application>
+        <file_path/>
+        <instance_id>47dbeba9dbdccf8052e3f70fbf9619a3</instance_id>
+        <instance_name>dev42416</instance_name>
+        <name>sys_ui_module_966b234b1b30101074c531d7dc4bcb07</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application/><filter/><name>Public holidays</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles/><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-05-20 14:47:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>966b234b1b30101074c531d7dc4bcb07</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Public holidays</sys_name><sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package><sys_policy/><sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope><sys_update_name>sys_ui_module_966b234b1b30101074c531d7dc4bcb07</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-05-20 14:47:00</sys_updated_on><table>x_86134_holidays_public_holidays</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-974446549</payload_hash>
+        <record_name>Public holidays</record_name>
+        <reverted_from/>
+        <source>bcc96f471b30101074c531d7dc4bcbb3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-20 14:51:14</sys_created_on>
+        <sys_id>146ce38b1b30101074c531d7dc4bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17232912c310000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-20 14:51:14</sys_updated_on>
+        <type>Module</type>
+        <update_guid>9a6b234bf230101046def1642fb3b009</update_guid>
+        <update_guid_history>9a6b234bf230101046def1642fb3b009:-1750758598,9a6b234bf230101046def1642fb3b009:-1750758598</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-05-20 14:51:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>368e33b6669c4750b46aa878c360dd24</sys_id>
+        <sys_metadata>966b234b1b30101074c531d7dc4bcb07</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Public holidays</sys_name>
+        <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
+        <sys_scope_delete display_value="">0010f2cd8b7d4800aae4c2a22df92810</sys_scope_delete>
+        <sys_update_name>sys_ui_module_966b234b1b30101074c531d7dc4bcb07</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_966b234b1b30101074c531d7dc4bcb07">146ce38b1b30101074c531d7dc4bcb73</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-05-20 14:51:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
