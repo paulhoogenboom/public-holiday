@@ -19,7 +19,7 @@
         <isolate_script>false</isolate_script>
         <list_action>true</list_action>
         <list_banner_button>true</list_banner_button>
-        <list_button>true</list_button>
+        <list_button>false</list_button>
         <list_choice>false</list_choice>
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
@@ -27,9 +27,11 @@
         <list_style/>
         <name>Update Holiday year</name>
         <onclick/>
-        <order>100</order>
-        <script><![CDATA[var message = new HolidayUtils().setCurrentYear();
+        <order>300</order>
+        <script><![CDATA[var message = new x_86134_holidays.HolidayUtils().setCurrentYear(current);
 gs.addInfoMessage(message);
+//action.setRedirectURL(current);
+
 ]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -41,7 +43,7 @@ gs.addInfoMessage(message);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1b4da31907a03010c37bf1d08c1ed0de</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Update Holiday year</sys_name>
         <sys_overrides/>
         <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
@@ -49,7 +51,7 @@ gs.addInfoMessage(message);
         <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
         <sys_update_name>sys_ui_action_1b4da31907a03010c37bf1d08c1ed0de</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-16 11:52:37</sys_updated_on>
+        <sys_updated_on>2021-06-30 13:32:27</sys_updated_on>
         <table>x_86134_holidays_public_holidays</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

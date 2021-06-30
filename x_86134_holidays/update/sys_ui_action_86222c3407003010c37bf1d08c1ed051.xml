@@ -19,7 +19,7 @@
         <isolate_script>false</isolate_script>
         <list_action>true</list_action>
         <list_banner_button>true</list_banner_button>
-        <list_button>true</list_button>
+        <list_button>false</list_button>
         <list_choice>false</list_choice>
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
@@ -27,7 +27,7 @@
         <list_style/>
         <name>Create this years holidays</name>
         <onclick/>
-        <order>100</order>
+        <order>200</order>
         <script><![CDATA[createHolidays();
 
 function createHolidays() {
@@ -49,7 +49,7 @@ function createHolidays() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>86222c3407003010c37bf1d08c1ed051</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Create this years holidays</sys_name>
         <sys_overrides/>
         <sys_package display_value="Holidays" source="x_86134_holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_package>
@@ -57,7 +57,7 @@ function createHolidays() {
         <sys_scope display_value="Holidays">3cc96f471b30101074c531d7dc4bcbb1</sys_scope>
         <sys_update_name>sys_ui_action_86222c3407003010c37bf1d08c1ed051</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-08 10:03:47</sys_updated_on>
+        <sys_updated_on>2021-06-30 13:32:34</sys_updated_on>
         <table>x_86134_holidays_public_holidays</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
